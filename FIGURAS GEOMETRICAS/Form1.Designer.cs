@@ -202,6 +202,7 @@
             RECTANGULO.TabStop = true;
             RECTANGULO.Text = "RECTÁNGULO";
             RECTANGULO.UseVisualStyleBackColor = true;
+            RECTANGULO.CheckedChanged += RECTANGULO_CheckedChanged;
             // 
             // TRIANGULO
             // 
@@ -214,6 +215,7 @@
             TRIANGULO.TabStop = true;
             TRIANGULO.Text = "TRIÁNGULO";
             TRIANGULO.UseVisualStyleBackColor = true;
+            TRIANGULO.CheckedChanged += TRIANGULO_CheckedChanged;
             // 
             // CUADRADO
             // 
@@ -226,6 +228,7 @@
             CUADRADO.TabStop = true;
             CUADRADO.Text = "CUADRADO";
             CUADRADO.UseVisualStyleBackColor = true;
+            CUADRADO.CheckedChanged += CUADRADO_CheckedChanged;
             // 
             // label1
             // 
@@ -277,15 +280,19 @@
             GUARDAR.TabIndex = 0;
             GUARDAR.Text = "GUARDAR";
             GUARDAR.UseVisualStyleBackColor = true;
+            GUARDAR.Click += GUARDAR_Click;
             // 
             // IMAGEN
             // 
+            IMAGEN.Image = Properties.Resources.CUBO;
             IMAGEN.Location = new Point(22, 358);
             IMAGEN.Margin = new Padding(5, 6, 5, 6);
             IMAGEN.Name = "IMAGEN";
             IMAGEN.Size = new Size(430, 485);
+            IMAGEN.SizeMode = PictureBoxSizeMode.StretchImage;
             IMAGEN.TabIndex = 1;
             IMAGEN.TabStop = false;
+            IMAGEN.Click += IMAGEN_Click;
             // 
             // INFORMACION
             // 

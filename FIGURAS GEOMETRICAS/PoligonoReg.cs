@@ -11,6 +11,7 @@ namespace FIGURAS_GEOMETRICAS
         //declar dos valores float para guardar numero de lados
         //y el apotema privados para usarse solo en esta clase
         private float apo, n;
+        private float Lado1;
 
         public float Apo //validar apotema existente o real
         {
@@ -82,8 +83,19 @@ namespace FIGURAS_GEOMETRICAS
 
         public override float area()//calculo de area clase papa
         {
+
             throw new NotImplementedException();
             //ESTO ES UNA EXEPCION DE USO DEFAULT DEL SISTEMA
+        }
+
+        public override double CalcularArea()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override double CalcularVolumen()
+        {
+            throw new NotImplementedException();
         }
     }
 }
